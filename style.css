@@ -2,4 +2,169 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Mont;
+}
+@font-face {
+  font-family: Mont;
+  src: url(./fonts/Montserrat-Regular.ttf);
+}
+
+body {
+  padding: 2rem 4rem;
+}
+header {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  line-height: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+.input {
+  width: 90%;
+  height: 2.2rem;
+  padding-left: 2.6rem;
+  border-radius: 10px;
+  font-size: larger;
+  margin-top: 0.6rem;
+}
+
+.icon {
+  position: relative;
+  bottom: 2.1rem;
+  left: 1rem;
+  opacity: 0.4;
+}
+.labels {
+  margin-top: -0.5rem;
+}
+.last {
+  display: flex;
+}
+select {
+  height: 2.2rem;
+  padding-left: 2.6rem;
+  border-radius: 10px;
+  font-size: larger;
+}
+#code {
+  height: 2.2rem;
+  padding-left: 2.6rem;
+  border-radius: 10px;
+  margin-left: 1rem;
+  font-size: larger;
+}
+#postcode {
+  margin-left: 1rem;
+}
+.world {
+  position: relative;
+  bottom: 2rem;
+  left: 1rem;
+}
+.world2 {
+  position: relative;
+  bottom: 2rem;
+  left: 2rem;
+}
+.last {
+  margin-top: -1rem;
+}
+.check {
+  margin-top: -1rem;
+}
+.submit {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 2rem;
+  margin-top: 1rem;
+}
+#submit {
+  background-color: #f2994a;
+  padding: 0.8rem 0.4rem;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  font-size: bold;
+}
+
+aside {
+  background-color: #eeeeee;
+  width: 100%;
+  height: 28rem;
+  border-radius: 10px;
+}
+img {
+  width: 7rem;
+  border-radius: 15px;
+}
+.item1 {
+  display: flex;
+  padding: 1rem;
+}
+.item2 {
+  display: flex;
+  padding: 1rem;
+}
+.description {
+  padding-left: 1rem;
+  line-height: 1.5rem;
+  /* border: 1px solid red; */
+  width: 100%;
+}
+.description p {
+  color: #f2994a;
+  font-weight: bold;
+  font-size: larger;
+}
+span {
+  font-size: smaller;
+  text-decoration: line-through;
+  color: black;
+  font-weight: lighter;
+}
+.rectangle {
+  border: 2px solid black;
+  border-radius: 5px;
+  width: 7rem;
+  height: 2rem;
+  margin-top: 1.5rem;
+  position: relative;
+  text-align: center;
+}
+
+.rectangle p {
+  color: rgb(0, 0, 0);
+}
+.ship,
+.total {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 2rem -1.7rem;
+  border-top: solid 1px black;
+}
+@media screen and (max-width: 840px) {
+  section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row: 1fr 1fr;
+    margin: 0;
+    padding: 0;
+    min-width: 470px;
+  }
+  aside {
+    grid-row-start: 1;
+    width: 100%;
+    margin-bottom: 3.5rem;
+    padding-right: 2rem;
+  }
+  .submit {
+    justify-content: center;
+  }
 }
